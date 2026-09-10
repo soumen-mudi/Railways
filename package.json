@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "build:standalone": "esbuild src/main.jsx --bundle --outfile=bundle.js --format=iife --loader:.js=jsx --loader:.jsx=jsx",
     "preview": "vite preview"
   },
   "dependencies": {
